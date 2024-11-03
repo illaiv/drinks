@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Cart</title>
+<style>
+    body {
+        background-image: url(background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    border: 7px solid rgba(174, 207, 83, 0.904);
+}
+.box {
+    flex: 0 0 500px;
+    height: 260px;
+    background-color: beige;
+    margin: 2px;
+    font-size: xx-large;
+    color: black;
+    box-sizing: border-box;
+    padding: 1px;
+    margin: 2px;
+    font-size:large;
+
+}
+h1 {
+    width: 100%;
+    background-color: azure;
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+
+}
+.drink_pic {
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instructions {
+    float: right;
+    margin-right: 2px;
+    font-size: medium;
+    width: 60%;
+}
+aside {
+    margin: 10px;
+    flex: 1 0 200px;
+    height: 300px;
+    background-color: beige;
+    border-radius: 30px;
+    border: 7px solid  rgba(174, 207, 83, 0.904);
+}
+#cart {
+        position: absolute;
+        bottom:20%;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        background: url("cart.png") no-repeat center center;
+        background-size: contain;
+        opacity: 1;
+      }
+</style>
+<script src="./lib/jquery-3.7.1.js"></script>
+<script src="drink_info.js"></script>
+<script src="drink_instructions.js"></script>
+<script src="cart.js"></script>
+</head>
+
+<body>
+    <h1>Please help yourself to a free drink!</h1>
+    <p>Here are some drink cards, please select the drink you are interested in. Instructions will be supplied in each card.</p>
+    <div id="cart"></div>
+
+    <div class="wrapper">
+    </div>
+    <aside>
+        <h2> Additional Information</h2>
+        <p> Welcome to the Vialli sponsored drink cart for the party. I have brought 5 drinks for you which contain some alcholic content in them. 
+        </p>
+        <p> The Mojito is a drink with mint undertones. It will also be mixed with Rum. The amount of alchol in this beverage is around 15 percent, so it will be on the lighter drinks on the cart.</p>
+<p>The Strawberry Daiquiri is a fruity drink with high alcholic content. It will be mixed with plenty of strawberries and rum and contain about 20 percent alcholic content.</p>
+<p>The Bloody Mary is going to be for people who enjoy the taste of tomatoes. It's on the lighter side of about 14 percent alcohol.</p>
+<p> The Pina Colada is my personal favorite. It's heavy with pinapples and alcohol coming in about 20 percent.</p>
+<p>The last drink on the menu will be a dirty martini. This is filled with the flavor of olives and my strongest drink on the menu, coming in at 25 percent alcoholic content.</p>
+</aside>
+</body>
+</html>
